@@ -4,5 +4,7 @@
  * @param {*} pivot
  */
 export default function (vnode, pivot) {
-  // 创建一个节点
+  console.log('目的是把虚拟节点', vnode, '插入到标杆', pivot, '之前')
+  // 创建一个DOM节点，这个节点现在还是孤儿节点
+  let domNode = document.createElement(vnode.sel)
 }
